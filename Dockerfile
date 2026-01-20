@@ -81,7 +81,7 @@ RUN mkdir -p /counterblock_data/asset_img /counterblock_data/asset_img.testnet
 # Install newest stable nodejs
 # (the `nodejs` package includes `npm`)
 RUN apt-get update && apt-get -y remove nodejs npm gyp
-RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 RUN apt-get update && apt-get -y install nodejs
 
 # Add transifex auth data if available
